@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+           border: 2px solid blue; 
+           border-collapse: collapse;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col span="1" style="background-color:aqua">
+        <col span="2" style="background-color:rgb(255, 255, 0)">
+        <col span="3" style="background-color:rgb(255, 38, 0)">
+
+
+        </colgroup>
+        <!--Table row-->
+        <tr>
+            <!--table column-->
+            <td colspan="2">Month</td>
+            <!-- <td>Amount</td> -->
+            <td>Quantity</td>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>200</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>feb</td>
+            <td rowspan="2" colspan="2">310</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>mar</td>
+            <td>800</td>
+            <!-- <td>3</td> -->
+        </tr>
+        <tr>
+            <td>total</td>
+            <td>246</td>
+            <!-- <td>25</td> -->
+        </tr>
+    </table>
+</body>
+</html>
