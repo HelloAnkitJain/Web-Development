@@ -1,0 +1,28 @@
+div{
+    border: 1px solid blueviolet;
+    height: 200px;
+    width: 200px;    display: inline-block;
+
+    background-image: linear-gradient(to bottom right, red, blue);
+
+}
+
+/* i am positioning a box relatively */
+/* .divi{
+
+    position: relative;
+    left: 10px;
+    top: 20px;
+
+} */
+
+#box1{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+#box2{
+    position: fixed;
+    top: 100px ;
+}

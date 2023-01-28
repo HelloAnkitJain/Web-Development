@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    /* wrapper ki height viport ki hight jitni hona chaiye  100 vh is max height of viewport*/
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}

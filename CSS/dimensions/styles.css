@@ -1,0 +1,16 @@
+.ankit{
+    max-height: 100px;
+    overflow: scroll;
+    border: 1px solid black;
+}
+
+.wid{
+    max-width: 50px;
+    /* max-height: 100px; */
+    overflow: scroll;
+    border: 2px solid black;
+}
+.mydiv{
+    border: 2px solid black;
+    min-height: 100px;
+}

@@ -1,0 +1,24 @@
+.ankit{
+    border: 1px solid pink;
+    height: 100px;
+    width: 150px;
+    /* to apply linear gradient */
+    /* bydefault the direction is top to down */
+
+    /* background-image: linear-gradient(yellow, green); */
+    background-image: linear-gradient(to right, yellow, green);
+    background-image: linear-gradient(to bottom right,yellow, green);
+
+    /* background-image: linear-gradient(yellow, green); */
+
+}
+
+.radial{
+    margin: 10px;
+    border: 1px solid black;
+    height: 400px;
+    width: 250px;
+    background-image: radial-gradient(red , blue);
+    background-image: radial-gradient(circle,red , blue);
+
+}

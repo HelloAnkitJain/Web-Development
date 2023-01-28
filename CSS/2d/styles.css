@@ -1,0 +1,9 @@
+.mydiv{
+    border: 2px solid black;
+    background-image: linear-gradient(to bottom left, yellow,green);
+    /* transform: translate(100px, 100px);  to move text left to right up down */
+    /* transform: rotate(-45deg); */
+    margin: 100px;
+    /* transform: scale(1,30); */
+    transform: skew(30deg);   /* the meaning of skew in css is to tilt element */
+}
