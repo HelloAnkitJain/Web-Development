@@ -162,13 +162,13 @@
 
 // console.log(items);
 
-let numbers = [1,2,-6,-9];
+// let numbers = [1,2,-6,-9];
 
-let items = numbers
-            .filter(value => value >= 0)
-            .map(num => {value: num});
+// let items = numbers
+//             .filter(value => value >= 0)
+//             .map(num => {value: num});
 
-console.log(items);
+// console.log(items);
 
 
 
