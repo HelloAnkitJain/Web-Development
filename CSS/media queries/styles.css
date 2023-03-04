@@ -1,0 +1,32 @@
+/* single max width */
+
+
+@media (max-width: 400px) {
+    body{
+        background-color: red;
+    }
+}
+
+
+/* using and */
+/* 
+@media (min-width:401px) and (max-width:500px){
+    body{
+        background-color: aqua;
+    }
+} */
+
+
+/* min width example */
+/* 
+@media (min-width:100px){
+    body{
+        background-color: chartreuse;
+    }
+} */
+
+@media (400px <= width <= 600px){
+body{
+    background-color: palevioletred;
+}
+}
