@@ -29,8 +29,12 @@ function handleSlider() {
     lengthDisplay.innerText = passwordLength;
     //or kuch bhi karna chahiye ? - HW
     const min = inputSlider.min;
+    console.log(min)
     const max = inputSlider.max;
-    inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "% 100%"
+    console.log(max)
+
+    //range ke according percentage find out karne ka formula in js
+    inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "% 100%"    // ( (passwordLength - min)*100/(max - min)) this formula will calculate the width of slider based on password length choosen by slider, "% 100%" this part is default height
 }
 
 function setIndicator(color) {
@@ -100,18 +104,21 @@ async function copyContent() {
 }
 
 function shufflePassword(array) {
+    console.log("fisher yates method: ", array)
     //Fisher Yates Method
-    for (let i = array.length - 1; i > 0; i--) {
+    for (let i = array.length - 1; i > 0; i--) //last index se loop chala aur 0 ki taraf gaya
+    {
         //random J, find out using random function
-        const j = Math.floor(Math.random() * (i + 1));
+        const j = Math.floor(Math.random() * (i + 1)); // string ki range ke ander random index find out kara   jo value j pe padi hai usko i ke sath swap kiya hai
         //swap number at i index and j index
-        const temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+        const temp = array[i];  // bhaut simple hai yaar litrally,   
+        array[i] = array[j]; // i element ki jagah   j dala
+        array[j] = temp;// j element ke ander i dala
       }
-    let str = "";
+
+    let str = ""; // convert array to string and returned it
     array.forEach((el) => (str += el));
-    return str;
+    return str;//password returned after shuffle
 }
 
 function handleCheckBoxChange() {
@@ -182,10 +189,10 @@ generateBtn.addEventListener('click', () => {
 
     if(uppercaseCheck.checked)
         funcArr.push(generateUpperCase);
-        console.log("mr. ankit the length of upper case check is  : "+funcArr.length)
+
     if(lowercaseCheck.checked)
         funcArr.push(generateLowerCase);
-        console.log("mr. ankit the length of lowercaseCheck is  : "+funcArr.length)
+
     if(numbersCheck.checked)
         funcArr.push(generateRandomNumber);
 
@@ -194,8 +201,7 @@ generateBtn.addEventListener('click', () => {
 
     //compulsory addition
     for(let i=0; i<funcArr.length; i++) {
-        // password += funcArr[i]();//Calling a Function from an Array of Functions, i is index () is for fun call
-        password = password + funcArr[i]();
+        password += funcArr[i]();
     }
     console.log("COmpulsory adddition done");
 
@@ -207,7 +213,7 @@ generateBtn.addEventListener('click', () => {
     }
     console.log("Remaining adddition done");
     //shuffle the password
-    password = shufflePassword(Array.from(password));
+    password = shufflePassword(Array.from(password)); // password ki string go as a array convert kara aur shufflepassword me argument pass kiya 
     console.log("Shuffling done");
     //show in UI
     passwordDisplay.value = password;
