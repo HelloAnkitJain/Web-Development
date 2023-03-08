@@ -13,10 +13,12 @@ async function fetchWeatherDetails() {
 
     try {
         let city = "goa";
-
+        //const reponse is fetch api call
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+        console.log("const response: ",response)
+        console.log(typeof(response))
         const data = await response.json();
-    
+        console.log(typeof(data))
         console.log("Weather data:-> " , data);
 
         renderWeatherInfo(data);
