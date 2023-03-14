@@ -1,0 +1,25 @@
+									Interview Questions:
+
+undefined vs null
+let vs var vs const
+what is NaN
+What is this
+What is new
+what is root in css
+reverse a string,word,array
++ , difference in console.log
+await and then
+session storage vs local storage
+spread and rest operator
+arrow function
+
+
+									        Brush up:
+
+Camelcase, snakecase , pascal notation
+how to access object properties = dot, bracket notation
+parse = to read something
+extracting values from arrays and objects = destructuring
+initialized, readdigned , redeclared
+if else if else - without else
+lib vs module vs framework vs package

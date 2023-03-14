@@ -1,0 +1,41 @@
+git clone (url)
+
+git init
+git status
+git add .
+
+git commit -m "comment"
+
+git push origin main
+
+git pull origin main
+
+
+
+git branch 
+git remote -v
+git log
+git branch (branch name)
+git checkout (branch name)
+ git branch -d temp                                                >>>>>>delete a branch
+
+______________________________________________________________________________
+
+git init
+git status
+git add .
+git commit -m "comment"
+git restore --staged {filename with exe}
+git log
+git reset (hash id) : to reset to particular commit
+git reset --hard (hash id): to reset
+git stash     : to stash add files to the staging index
+git stash pop/apply
+git push origin master 
+
+branching:
+
+git branch (branchname)
+git checkout (branchname)
+git merge (branchname) : to merge branches go to main branch
+git branch -D study
