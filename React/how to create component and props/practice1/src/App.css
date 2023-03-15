@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  background-color: aqua;
+}
+.flop {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.green{
+  font-weight: bolder;
+}
