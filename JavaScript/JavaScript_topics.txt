@@ -23,3 +23,5 @@ extracting values from arrays and objects = destructuring
 initialized, readdigned , redeclared
 if else if else - without else
 lib vs module vs framework vs package
+
+data ka flow , data kaise pass hota hai is very important
