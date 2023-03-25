@@ -103,3 +103,66 @@
 
 // console.log(person2['lastname']);
 // // Expected output: "Doe"
+
+
+/// array indert and remove
+
+// let arr =['shaym','ram ', 'raghu', 'ravi']
+
+// arr.push('ramesh') // end
+
+// console.log(arr)
+
+// arr.pop() // delete end
+
+// combinging an arraty
+
+// let ankit = [1,2,3,4,5]
+// let ram = ['1','1','a']
+
+// ankit.concat(ram)
+
+// console.log(ankit.concat(ram))
+
+// slice
+
+// let ankit = [1,2,3,4,5]
+// let ram = ['1','1','a']
+
+// ankit.concat(ram)
+
+// console.log(ankit.slice(1,3)) // output: [2, 3]
+
+
+//          copy using spread operator
+
+// let ankit = [1,2,3]
+
+// let copy = [...ankit]
+
+// console.log(copy)
+
+// function ankitji(){
+//     let total = 0;
+//     for (let key of arguments) {
+//            total += key;
+//         }
+//      return total;
+//     }
+// ankitji(1,1,1)
+                // rest op
+// var myName = ["Marina" , "Magdy" , "Shafiq"] ;
+// const [firstName , ...familyName] = myName ;
+// console.log(firstName); // Marina ;
+// console.log(familyName); // [ "Magdy" , "Shafiq"] ;
+
+// function myData(...args){
+//     console.log(args) ; // ["Marina",24,"Front-End Developer"]
+//     }
+//     myData("Marina",24,"Front-End Developer") ;
+
+                    //Spread Operator […spread]
+
+// var myName = ["Marina" , "Magdy" , "Shafiq"];
+// var newArr = [...myName ,"FrontEnd" , 24];
+// console.log(newArr) ; // ["Marina" , "Magdy" , "Shafiq" , "FrontEnd" , 24 ] ;
