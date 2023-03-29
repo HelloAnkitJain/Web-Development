@@ -166,3 +166,28 @@
 // var myName = ["Marina" , "Magdy" , "Shafiq"];
 // var newArr = [...myName ,"FrontEnd" , 24];
 // console.log(newArr) ; // ["Marina" , "Magdy" , "Shafiq" , "FrontEnd" , 24 ] ;
+
+/// example of async and synchronous
+
+// setTimeout(function() {
+//     console.log('third');
+// },3000)
+
+// function sync() {
+//     console.log('first');
+// }
+// sync();
+
+// console.log('second');
+
+
+
+// async function mera(){
+// let apiji = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=1b4f07e8b02a8ac24f9dfd5269509b82')
+// let res = await apiji.json()  /// json ko javascript object me convert kara hai to use it
+// console.log('this is the responce original')
+// console.log(apiji)
+// console.log('this is the responce converted to json')
+// console.log(res)
+// }
+// mera()
