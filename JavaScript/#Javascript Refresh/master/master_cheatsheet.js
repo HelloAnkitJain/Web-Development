@@ -191,3 +191,14 @@
 // console.log(res)
 // }
 // mera()
+
+
+// printing a object value
+// let ankit = {
+//     name: "ankit",
+//     surname:"jain"}
+
+// for (let ele in ankit){
+//     console.log(ankit[ele])
+// }
+
