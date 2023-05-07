@@ -1,0 +1,5 @@
+let userString = "ankit"
+
+let reverse = userString.split('').reverse().join('')
+
+console.log(reverse)
